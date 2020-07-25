@@ -1,0 +1,58 @@
+Book Category
+
++bookAuthor
++bookName
++bookISBN
+
+- ISBN Section:
+bookISBN.java:
+
+import java.util.Scanner;
+
+public class bookISBN {
+	public static void main(String [] args) {
+		Scanner scnr = new Scanner(System.in);
+		int bookISBN;
+		
+		bookISBN = scnr.nextInt();
+		
+		//Shows ISBN number
+		System.out.println("This ISBN book is " + bookISBN);
+	}
+}
+
+
+
+- Author Section:
+bookAuthor.java:
+
+import java.util.Scanner;
+
+public class bookAuthor {
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		int FirstAuthor;
+		int LastAuthor;
+		
+		String FirstAuthor = scnr.nextLine();
+		String LastAuthor = scnr.nextLine();
+
+        //Identifies the author's name
+		System.out.print("The author's name of this book is ");
+		System.out.print(FirstAuthor);
+		System.out.print(" ");
+		System.out.print(LastAuthor);
+		System.out.print(".");
+	}
+}
+
+
+
+- Book Name Section:
+bookName.java
+
+import java.util.Scanner;
+
+public class bookName {
+	public static void main(String [] args) {
+		
